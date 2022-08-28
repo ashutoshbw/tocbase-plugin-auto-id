@@ -6,7 +6,7 @@ A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically gene
 
 If used, it must be used as the first plugin:
 
-```html>
+```html
 <script type="module">
 import {tocbase} from "https://unpkg.com/tocbase@latest/dist/cdn.es.min.js";
 import autoID from "https://unpkg.com/tocbase-plugin-auto-id@latest/dist/cdn.es.min.js"
