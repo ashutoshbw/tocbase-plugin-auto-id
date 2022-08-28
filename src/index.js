@@ -1,4 +1,4 @@
-const autoID = options => function autoID(bag) {
+const autoID = bag => {
   bag.hArray.forEach(h => {
     if (h.id) return;
     let id = h.textContent.trim().replace(/\s+/g, "-");
@@ -12,4 +12,6 @@ const autoID = options => function autoID(bag) {
   });
 }
 
-export default autoID;
+const thePlugin = options => autoID;
+
+export default thePlugin;

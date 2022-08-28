@@ -3,7 +3,10 @@ const input = ["src/index.js"];
 
 const terserConfig = {
   ecma: 2022,
-  mangle: { toplevel: true },
+  mangle: { 
+    toplevel: true,
+    keep_fnames: /autoID/,
+  },
   compress: {
     module: true,
     toplevel: true,
