@@ -1,0 +1,46 @@
+{
+  "type": "module",
+  "name": "tocbase-plugin-auto-id",
+  "version": "1.0.0",
+  "description": "A tocbase plugin for automatically generating ids of headings.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashutoshbw/tocbase-plugin-auto-id.git"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/*",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "automatic id",
+    "auto-id",
+    "plugin",
+    "tocbase",
+    "table of contents",
+    "toc"
+  ],
+  "author": {
+    "name": "Ashutosh Biswas",
+    "email": "ashutoshbw314@gmail.com",
+    "url": "https://ashutoshbiswas.dev"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/ashutoshbw/tocbase-plugin-auto-id/issues",
+  "devDependencies": {
+    "rollup": "^2.78.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
