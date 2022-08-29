@@ -3,10 +3,7 @@ const input = ["src/index.js"];
 
 const terserConfig = {
   ecma: 2022,
-  mangle: { 
-    toplevel: true,
-    keep_fnames: /autoID/,
-  },
+  mangle: { toplevel: true },
   compress: {
     module: true,
     toplevel: true,
@@ -37,12 +34,6 @@ export default [
   {
     input,
     output: [
-      {
-        file: `./dist/cdn.es.min.js`,
-        format: "es",
-        exports: "default",
-        plugins: [terser(terserConfig)],
-      },
       {
         file: `./dist/index.js`,
         format: "es",
