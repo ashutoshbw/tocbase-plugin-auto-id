@@ -22,7 +22,7 @@ Import it in your script like below if you are using ESM syntax:
 import autoID from "tocbase-plugin-auto-id";
 ```
 
-You can also use use common js syntax:
+You can also use common js syntax:
 ```js
 const autoID = require("tocbase-plugin-auto-id");
 ```
@@ -41,14 +41,14 @@ tocbase({
 
 ## Options
 ### `separator`
-Type: `String`
+Type: `String`<br>
 Default: `"-"`
 
 This is the separator to join words of a heading.
 
 
 ### `lowerCase`
-Type: Any value
+Type: Any value<br>
 Default: `undefined`
 
 If it's a truthy value the resulted id is lowercased otherwise the case remains intact.
