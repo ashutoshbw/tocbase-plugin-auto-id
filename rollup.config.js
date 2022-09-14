@@ -1,4 +1,5 @@
 import { terser } from 'rollup-plugin-terser';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 const input = ["src/index.js"];
 
 const terserConfig = {
@@ -25,10 +26,11 @@ export default [
     output: {
       file: `./dist/cdn.umd.min.js`,
       format: 'umd',
-      name: "autoID",
+      name: "autoId",
       exports: "default",
       plugins: [terser(terserConfig)],
     },
+    plugins: [nodeResolve()],
   },
   // CJS and ESM
   {
@@ -45,5 +47,6 @@ export default [
         exports: "default",
       },
     ],
+    plugins: [nodeResolve()],
   }
 ]
