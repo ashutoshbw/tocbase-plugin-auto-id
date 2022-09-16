@@ -3,7 +3,7 @@
 A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically generating ids of headings.
 
 ## Requirements
-`tocbase` version 8.3.4 or up.
+`tocbase` version 8.3.5 or up.
 
 ## Installing
 ### From CDN
