@@ -22,12 +22,12 @@ npm i tocbase-plugin-auto-id
 
 Import it in your script like below if you are using ESM syntax:
 ```js
-import autoID from "tocbase-plugin-auto-id";
+import autoId from "tocbase-plugin-auto-id";
 ```
 
 You can also use common js syntax:
 ```js
-const autoID = require("tocbase-plugin-auto-id");
+const autoId = require("tocbase-plugin-auto-id");
 ```
 
 Follow your bundler's instructions for generating the output file and then load it in your HTML page through script tag to use it.
