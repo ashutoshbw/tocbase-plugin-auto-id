@@ -5,8 +5,10 @@ export default createPlugin("auto-id", (bag, resolveInput, pluginName) => {
   const ipSep = resolveInput("separator", "-");
   const ipBLowerCase = resolveInput("lowerCase", 1);
 
+  bag.plugins[pluginName].__data.headings = [];
+
   bag.hArray.forEach(h => {
-    if (h.id) return;
+    if (h.hasAttribute("id")) return;
     const joinedText = h.textContent.trim().replace(/\s+/g, ipSep);
     let id = joinedText;
     let counter = 1;
@@ -15,5 +17,10 @@ export default createPlugin("auto-id", (bag, resolveInput, pluginName) => {
       counter++;
     };
     h.id = ipBLowerCase ? id.toLowerCase() : id;
+    bag.plugins[pluginName].__data.headings.push(h);
+  });
+
+  return () => bag.plugins[pluginName].__data.headings.forEach(h => {
+    h.removeAttribute("id");
   });
 });
