@@ -2,14 +2,17 @@
 
 A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically generating ids of headings.
 
+## Requirements
+`tocbase` version 8.3.4 or up.
+
 ## Installing
 ### From CDN
 In your HTML page's `<head>`, include the following alongside `tocbase` library:
 ```html
-<script  src="https://unpkg.com/tocbase-plugin-auto-id@2.0.1/dist/cdn.umd.min.js"></script>
+<script  src="https://unpkg.com/tocbase-plugin-auto-id@3.0.2/dist/cdn.umd.min.js"></script>
 ```
 
-This will result in a `autoID` variable containing a function.
+This will result in a `autoId` variable containing a function.
 
 ### Using node and bundler
 To install it run in your terminal:
@@ -33,11 +36,10 @@ Follow your bundler's instructions for generating the output file and then load 
 If used, it must be used as the first plugin:
 
 ```js
-tocbase({
-  plugins: [autoID()]
+const toc = createToc({ 
+  plugins: [ autoId() ]
 })
 ```
-
 
 ## Options
 ### `separator`
@@ -49,6 +51,6 @@ This is the separator to join words of a heading.
 
 ### `lowerCase`
 Type: Any value<br>
-Default: `undefined`
+Default: `1`
 
 If it's a truthy value the resulted id is lowercased otherwise the case remains intact.
