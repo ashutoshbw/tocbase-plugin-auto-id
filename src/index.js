@@ -1,6 +1,6 @@
 import {createPlugin} from "tocbase";
 
-export default createPlugin("auto-id", (bag, resolveInput, pluginName) => {
+export default createPlugin("autoId", (bag, resolveInput, pluginName) => {
   if (bag.plugins.__applied.length != 0) throw new Error(`${bag.TB} 👉 "${pluginName}" must be used as the 1st plugin.`);
   const ipSep = resolveInput("separator", "-");
   const ipBLowerCase = resolveInput("lowerCase", 1);
