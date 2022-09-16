@@ -45,6 +45,6 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "tocbase": "^5.3.3"
+    "tocbase": "^8.3.4"
   }
 }

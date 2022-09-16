@@ -7,7 +7,7 @@ export default createPlugin("autoId", (bag, resolveInput, pluginName) => {
 
   bag.plugins[pluginName].__data.headings = [];
 
-  bag.hArray.forEach(h => {
+  bag.h.forEach(h => {
     if (h.hasAttribute("id")) return;
     const joinedText = h.textContent.trim().replace(/\s+/g, ipSep);
     let id = joinedText;
