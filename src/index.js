@@ -13,7 +13,7 @@ export default createPlugin("autoId", (bag, resolveInput, pluginName) => {
     let id = joinedText;
     let counter = 1;
     while(document.getElementById(id)) {
-      id = joinedText + `${sep}${counter}`
+      id = joinedText + `${ipSep}${counter}`
       counter++;
     };
     h.id = ipBLowerCase ? id.toLowerCase() : id;
