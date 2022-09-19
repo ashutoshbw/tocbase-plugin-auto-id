@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.0.7] - 2022-09-19
+### Changed
+- Updated documentation to add a more example.
+
 ## [3.0.6] - 2022-09-19
 ### Added
 - MIT License

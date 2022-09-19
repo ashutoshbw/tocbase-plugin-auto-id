@@ -14,8 +14,7 @@ In your HTML page's `<head>`, include the following alongside `tocbase` library:
 
 **Note**: It is recommend to use a fixed version(like above) instead of `latest` keyword, to avoid any troubles if breaking changes happen.
 
-This will result in a `autoId` variable containing a function.
-
+This will result in a `autoId` variable holding the plugin.
 
 ### Using node and bundler
 To install it run in your terminal:
@@ -40,8 +39,20 @@ If used, it must be used as the first plugin:
 
 ```js
 const toc = createToc({ 
-  plugins: [ autoId() ]
-})
+  plugins: [ autoId(), ],
+});
+```
+
+Below is an example with configs:
+```js
+const toc = createToc({
+  plugins: [
+    autoId({
+      lowerCase: 1,
+      separator: "_",
+    }),
+  ],
+});
 ```
 
 ## Configs
