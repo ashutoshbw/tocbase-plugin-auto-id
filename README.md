@@ -48,7 +48,7 @@ Below is an example with configs:
 const toc = createToc({
   plugins: [
     autoId({
-      lowerCase: 1,
+      lowerCase: 0,
       separator: "_",
     }),
   ],

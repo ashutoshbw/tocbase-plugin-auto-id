@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "tocbase-plugin-auto-id",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "A tocbase plugin for automatically generating ids of headings.",
   "repository": {
     "type": "git",
