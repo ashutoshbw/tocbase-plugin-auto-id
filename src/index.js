@@ -24,6 +24,5 @@ export default (config = {}) => ({
     return () => bag.plugins[pluginName].__data.headings.forEach(h => {
       h.removeAttribute("id");
     });
-  },
-  parentName: null
-})
+  }
+});
