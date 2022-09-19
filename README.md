@@ -3,16 +3,19 @@
 A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically generating ids of headings.
 
 ## Requirements
-`tocbase` version 8.3.5 or up.
+`tocbase` version 8.4.5 or up.
 
 ## Installing
 ### From CDN
 In your HTML page's `<head>`, include the following alongside `tocbase` library:
 ```html
-<script  src="https://unpkg.com/tocbase-plugin-auto-id@3.0.2/dist/cdn.umd.min.js"></script>
+<script  src="https://unpkg.com/tocbase-plugin-auto-id@3.0.6/dist/cdn.umd.min.js"></script>
 ```
 
+**Note**: It is recommend to use a fixed version(like above) instead of `latest` keyword, to avoid any troubles if breaking changes happen.
+
 This will result in a `autoId` variable containing a function.
+
 
 ### Using node and bundler
 To install it run in your terminal:
@@ -41,7 +44,7 @@ const toc = createToc({
 })
 ```
 
-## Options
+## Configs
 ### `separator`
 Type: `String`<br>
 Default: `"-"`
