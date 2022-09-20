@@ -1,6 +1,6 @@
 # tocbase-plugin-auto-id
 
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/tocbase-plugin-auto-id?color=green)
+<a href="https://bundlephobia.com/package/tocbase-plugin-auto-id" target="_blank"><img src="https://img.shields.io/bundlephobia/minzip/tocbase-plugin-auto-id?color=green" alt="Minimized and gzipped size"></a>
 
 A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically generating ids of headings.
 
