@@ -1,5 +1,7 @@
 # tocbase-plugin-auto-id
 
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/tocbase-plugin-auto-id?color=green)
+
 A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically generating ids of headings.
 
 ## Requirements
@@ -43,7 +45,7 @@ const toc = createToc({
 });
 ```
 
-Below is an example with configs:
+Below is an example that configures the plugin with options:
 ```js
 const toc = createToc({
   plugins: [
@@ -55,7 +57,7 @@ const toc = createToc({
 });
 ```
 
-## Configs
+## Options
 ### `separator`
 Type: `String`<br>
 Default: `"-"`
