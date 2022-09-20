@@ -11,7 +11,7 @@ A [tocbase](https://github.com/ashutoshbw/tocbase) plugin for automatically gene
 ### From CDN
 In your HTML page's `<head>`, include the following alongside `tocbase` library:
 ```html
-<script  src="https://unpkg.com/tocbase-plugin-auto-id@3.0.6/dist/cdn.umd.min.js"></script>
+<script  src="https://unpkg.com/tocbase-plugin-auto-id@3.0.11/dist/cdn.umd.min.js"></script>
 ```
 
 **Note**: It is recommend to use a fixed version(like above) instead of `latest` keyword, to avoid any troubles if breaking changes happen.
